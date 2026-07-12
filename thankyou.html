@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Thank You | Debashis Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top left,#1E40AF 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#7C3AED 0%,transparent 40%),
+    #050816;
+
+}
+
+.card{
+
+    width:550px;
+
+    max-width:90%;
+
+    padding:60px 45px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+
+.success{
+
+    width:110px;
+
+    height:110px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:50px;
+
+    color:#22C55E;
+
+    background:rgba(34,197,94,.12);
+
+    border:2px solid #22C55E;
+
+    box-shadow:
+    0 0 25px rgba(34,197,94,.45);
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
+
+}
+
+h1{
+
+    margin-top:35px;
+
+    color:white;
+
+    font-size:44px;
+
+}
+
+p{
+
+    margin-top:18px;
+
+    color:#CBD5E1;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+a{
+
+    margin-top:45px;
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    padding:16px 38px;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#3B82F6,#8B5CF6);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+a:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(59,130,246,.4);
+
+}
+
+.brand{
+
+    margin-top:30px;
+
+    color:#60A5FA;
+
+    font-size:18px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="success">
+
+        <i class="fa-solid fa-check"></i>
+
+    </div>
+
+    <h1>Thank You!</h1>
+
+    <p>
+
+        Your message has been sent successfully.
+
+        <br><br>
+
+        I appreciate your interest in my portfolio.
+
+        I'll get back to you as soon as possible.
+
+    </p>
+
+    <a href="index.html">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Back to Portfolio
+
+    </a>
+
+    <div class="brand">
+
+        Debashis Satapathy
+
+        <br>
+
+        Java Full Stack Developer
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
