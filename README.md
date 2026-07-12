@@ -1,21 +1,33 @@
+<!-- ================= HEADER ================= -->
+
+<h1 align="center">
+  Hi 👋, I'm Debashis Satapathy
+</h1>
+
+<h3 align="center">
+🚀 Java Full Stack Developer | Spring Boot | Microservices | REST APIs
+</h3>
+
 <p align="center">
-  <img src="assets/images/readme/banner.png" alt="Debashis Portfolio Banner" width="100%">
+
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&size=28&duration=3500&pause=1000&center=true&vCenter=true&width=700&lines=Java+Full+Stack+Developer;Spring+Boot+Developer;Microservices+Enthusiast;Backend+Developer;Always+Learning+New+Technologies" />
+
 </p>
 
-<h1 align="center">🌌 Debashis Portfolio</h1>
-
 <p align="center">
-  <b>Java Full Stack Developer</b>
-</p>
 
-<p align="center">
-  <a href="https://github.com/Debashish0065">
-    <img src="https://img.shields.io/badge/GitHub-Debashish0065-181717?style=for-the-badge&logo=github">
-  </a>
-  <img src="https://img.shields.io/badge/Java-Full%20Stack-blue?style=for-the-badge&logo=openjdk">
-  <img src="https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge&logo=springboot">
-  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql">
-  <img src="https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker">
+<a href="https://github.com/Debashish0065/">
+<img src="https://img.shields.io/badge/GitHub-Debashish0065-181717?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="mailto:debashissatapathy2003@gmail.com">
+<img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/in/https://www.linkedin.com/in/debashis-satapathy-839482232/">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/>
+</a>
+
 </p>
 
 ---
