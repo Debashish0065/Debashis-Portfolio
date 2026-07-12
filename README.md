@@ -25,7 +25,7 @@
 
 # 🌌 Debashis Portfolio
 
-A modern, responsive and premium personal portfolio built to showcase my skills, projects and journey as a **Java Full Stack Developer**.
+A modern, responsive and personal portfolio built to showcase my skills, projects and journey as a **Java Full Stack Developer**.
 
 Designed with a clean UI, glassmorphism effects, smooth animations and a professional developer-focused layout.
 
