@@ -819,49 +819,38 @@ Spring Boot, REST APIs, Microservices, Hibernate and MySQL.
             </div>
 
             <!-- Right Side -->
+<form id="contact-form" class="contact-form">
 
-            <form class="contact-form"
-                 action="https://formsubmit.co/debashissatapathy2003@gmail.com"
-                 method="POST">
+    <input
+        type="text"
+        name="from_name"
+        placeholder="Your Name"
+        required>
 
-                <input
-                    type="text"
-                    placeholder="Your Name"
-                    required>
+    <input
+        type="email"
+        name="from_email"
+        placeholder="Your Email"
+        required>
 
-                <input
-                    type="email"
-                    placeholder="Your Email"
-                    required>
+    <input
+        type="text"
+        name="subject"
+        placeholder="Subject"
+        required>
 
-                <input
-                    type="text"
-                    placeholder="Subject"
-                    required>
+    <textarea
+        name="message"
+        rows="6"
+        placeholder="Your Message"
+        required></textarea>
 
-                <textarea
-                    rows="6"
-                    placeholder="Your Message"></textarea>
+    <button type="submit" class="btn primary-btn">
+        <i class="fa-solid fa-paper-plane"></i>
+        Send Message
+    </button>
 
-                <input type="hidden" name="_captcha" value="false">
-
-                <input type="hidden" name="_template" value="table">
-
-                <input type="hidden" name="_subject" value="New Portfolio Contact">
-
-                <input type="hidden"
-                    name="_next"
-                    value="https://debashish0065.github.io/Debashis-Portfolio/thankyou.html">
-
-                <button type="submit" class="btn primary-btn">
-
-                    <i class="fa-solid fa-paper-plane"></i>
-
-                    Send Message
-
-                </button>
-
-            </form>
+</form>
 
         </div>
 
