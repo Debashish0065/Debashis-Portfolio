@@ -46,7 +46,7 @@ Designed with a clean UI, glassmorphism effects, smooth animations and a profess
 ## 🚀 Live Preview
 
 https://debashis-portfolio.onrender.com
-Here u can see my portflio
+Here u can see my portfolio (live demo).
 
 ---
 
