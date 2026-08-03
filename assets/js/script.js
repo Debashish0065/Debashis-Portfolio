@@ -118,3 +118,49 @@ window.addEventListener("scroll",()=>{
     });
 
 });
+
+// EmailJS Initialization
+emailjs.init("YOUR_PUBLIC_KEY");
+
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        this
+    )
+    .then(() => {
+        alert("Message sent successfully!");
+        window.location.href = "thankyou.html";
+    })
+    .catch((error) => {
+        console.error(error);
+        alert("Failed to send message.");
+    });
+});
+
+// EmailJS Initialization
+emailjs.init("69IR11gjh9CNjfUMZ");
+
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_m5t36wa",
+        "template_khb8jbp",
+        this
+    )
+    .then(() => {
+        alert("Message sent successfully!");
+        window.location.href = "thankyou.html";
+    })
+    .catch((error) => {
+        console.error(error);
+        alert("Failed to send message.");
+    });
+});
