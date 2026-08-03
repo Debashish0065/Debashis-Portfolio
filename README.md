@@ -61,19 +61,19 @@ Designed with a clean UI, glassmorphism effects, smooth animations and a profess
 
 ### 👤 About Me
 
-<img src="/assets/images/readme/about-me.png" width="100%" alt="About Section"/>
+<img src="/assets/images/readme/aboutme.png" width="100%" alt="About Section"/>
 
 ---
 
 ### 💻 Skills
 
-<img src="/assets/images/readme/skill.png" width="100%" alt="Skills Section"/>
+<img src="/assets/images/readme/skills.png" width="100%" alt="Skills Section"/>
 
 ---
 
 ### 🚀 Projects
 
-<img src="/assets/images/readme/project.png" width="100%" alt="Projects Section"/>
+<img src="/assets/images/readme/projects.png" width="100%" alt="Projects Section"/>
 
 ---
 
