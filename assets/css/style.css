@@ -2159,3 +2159,35 @@ rotate(-320deg);
     width:100%;
 
 }
+
+
+/* Contact form status - hidden by default */
+#form-status {
+    display: none;
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Show status only when needed */
+#form-status.success,
+#form-status.error {
+    display: block;
+}
+
+/* Success message */
+#form-status.success {
+    color: #047857;
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+}
+
+/* Error message */
+#form-status.error {
+    color: #b91c1c;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+}

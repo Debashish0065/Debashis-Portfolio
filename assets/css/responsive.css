@@ -1,87 +1,423 @@
-@media(max-width:1200px){
 
-.skills-grid{
+/* ==========================================================
+   RESPONSIVE CSS
+   Desktop, Tablet & Mobile
+========================================================== */
 
-grid-template-columns:repeat(3,1fr);
+/* ---------- Global responsive fixes ---------- */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+    scroll-behavior: smooth;
 }
 
-@media(max-width:768px){
-
-.skills-grid{
-
-grid-template-columns:repeat(2,1fr);
-
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: clip;
 }
 
+img,
+video,
+iframe {
+    max-width: 100%;
 }
 
-@media(max-width:500px){
-
-.skills-grid{
-
-grid-template-columns:1fr;
-
+img {
+    height: auto;
 }
 
-}
-@media(max-width:992px){
-
-.projects-grid{
-
-grid-template-columns:1fr;
-
+.container {
+    width: min(100% - 48px, 1200px);
+    margin-inline: auto;
 }
 
-}
-@media(max-width:992px){
-
-.github-container{
-
-grid-template-columns:1fr;
-
+section {
+    scroll-margin-top: 90px;
 }
 
-}
-@media(max-width:768px){
-
-.achievement-grid{
-
-grid-template-columns:1fr;
-
-}
-}
-@media(max-width:992px){
-
-.contact-container{
-
-grid-template-columns:1fr;
-
+h1,
+h2,
+h3,
+p {
+    overflow-wrap: break-word;
 }
 
-.contact-form button{
+/* ---------- Large laptops and small desktops ---------- */
 
-width:100%;
+@media (max-width: 1200px) {
+    .container {
+        width: min(100% - 40px, 1100px);
+    }
 
+    .skills-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .github-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }
 
+/* ---------- Tablets ---------- */
+
+@media (max-width: 992px) {
+    .container {
+        width: min(100% - 36px, 900px);
+    }
+
+    /* Header and navigation */
+    .header .container {
+        gap: 16px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    /* Hero layout */
+    .hero,
+    .hero-container,
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1,
+    .hero-title {
+        max-width: 100%;
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        line-height: 1.15;
+        overflow-wrap: anywhere;
+    }
+
+    .hero p,
+    .hero-description {
+        max-width: 100%;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .project-card {
+        min-width: 0;
+    }
+
+    /* GitHub */
+    .github-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Achievements */
+    .achievement-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Contact */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+        max-width: 100%;
+    }
 }
-@media(max-width:768px){
 
-.footer-content{
+/* ---------- Mobile phones ---------- */
 
-flex-direction:column;
+@media (max-width: 768px) {
+    .container {
+        width: calc(100% - 32px);
+    }
 
-text-align:center;
+    section {
+        scroll-margin-top: 75px;
+    }
 
+    /* Header */
+    .header {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header .container {
+        width: calc(100% - 28px);
+        flex-wrap: wrap;
+    }
+
+    .logo,
+    .navbar-brand {
+        max-width: 75%;
+        overflow-wrap: anywhere;
+    }
+
+    /*
+       Keep navigation within the screen.
+       If your HTML has a hamburger menu, its existing
+       JavaScript should control when .nav-links opens.
+    */
+    .nav-links {
+        max-width: 100%;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* Hero section */
+    .hero,
+    .hero-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .hero .container,
+    .hero-container {
+        padding-inline: 0;
+    }
+
+    .hero h1,
+    .hero-title {
+        font-size: clamp(2.25rem, 9vw, 3.5rem);
+        line-height: 1.15;
+        letter-spacing: -1px;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .hero h2,
+    .hero-subtitle {
+        font-size: clamp(1.5rem, 6vw, 2.25rem);
+        line-height: 1.3;
+        max-width: 100%;
+    }
+
+    .hero p,
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.8;
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero-buttons .btn {
+        max-width: 100%;
+    }
+
+    /* Floating technology badges */
+    .floating-card,
+    .floating-badge,
+    .tech-badge {
+        max-width: calc(100vw - 32px);
+        overflow-wrap: anywhere;
+    }
+
+    /* Section headings */
+    .section-heading {
+        font-size: clamp(1.7rem, 7vw, 2.5rem);
+        line-height: 1.25;
+    }
+
+    .section-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .skill-card {
+        min-width: 0;
+        padding: 18px 12px;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .project-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .project-buttons .btn {
+        max-width: 100%;
+    }
+
+    /* GitHub */
+    .github-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    /* Achievements */
+    .achievement-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    /* Contact */
+    .contact-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .contact-card {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-center {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
-.footer-center{
+/* ---------- Small mobile phones ---------- */
 
-justify-content:center;
+@media (max-width: 500px) {
+    .container {
+        width: calc(100% - 28px);
+    }
 
+    .skills-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hero h1,
+    .hero-title {
+        font-size: clamp(2rem, 10vw, 2.8rem);
+        letter-spacing: -0.5px;
+    }
+
+    .hero h2,
+    .hero-subtitle {
+        font-size: clamp(1.4rem, 7vw, 1.9rem);
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .section-heading {
+        font-size: clamp(1.6rem, 8vw, 2rem);
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .project-buttons .btn {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+    }
 }
 
+/* ---------- Extra-small phones ---------- */
+
+@media (max-width: 360px) {
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    .hero h1,
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
 }
