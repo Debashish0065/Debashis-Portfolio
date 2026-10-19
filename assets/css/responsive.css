@@ -421,3 +421,221 @@ p {
         font-size: 12px;
     }
 }
+
+
+/* ==========================================================
+   MOBILE HERO FIX — Debashis Portfolio
+   Add this at the VERY BOTTOM of responsive.css
+========================================================== */
+
+@media (max-width: 768px) {
+
+    /* Keep the fixed header compact and readable */
+    .header {
+        padding: 12px 16px;
+    }
+
+    .header .container {
+        height: auto;
+        min-height: 60px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo {
+        max-width: 100%;
+        font-size: clamp(22px, 6vw, 30px);
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: clamp(10px, 3vw, 18px);
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: clamp(12px, 3.5vw, 15px);
+        white-space: nowrap;
+    }
+
+    /* Give the hero enough room below the fixed header */
+    .hero {
+        min-height: auto;
+        padding: 150px 0 60px;
+        overflow: hidden;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 35px;
+        width: calc(100% - 32px);
+        padding: 0;
+    }
+
+    .hero-left {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .hero-intro {
+        max-width: 100%;
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        font-size: 13px;
+    }
+
+    /* Allow the name to wrap on mobile */
+    .hero-name {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        font-size: clamp(34px, 9vw, 48px);
+        line-height: 1.15;
+        letter-spacing: -1px;
+    }
+
+    .hero-role {
+        font-size: clamp(25px, 7vw, 36px);
+        line-height: 1.25;
+        overflow-wrap: anywhere;
+    }
+
+    .hero h3 {
+        min-height: 0;
+        margin: 22px 0;
+        font-size: clamp(22px, 6vw, 30px);
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-buttons {
+        margin: 28px 0;
+        gap: 12px;
+    }
+
+    .hero-buttons .btn {
+        text-align: center;
+        padding: 13px 18px;
+    }
+
+    .tech-pills {
+        gap: 10px;
+    }
+
+    .tech-pills span {
+        padding: 9px 14px;
+        font-size: 13px;
+    }
+
+    /* Place the Java graphic below the text instead of over it */
+    .hero-right {
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .tech-orbit {
+        width: min(100%, 340px);
+        height: 340px;
+        margin: 0 auto;
+    }
+
+    .orbit1 {
+        width: 320px;
+        height: 320px;
+    }
+
+    .orbit2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .orbit3 {
+        width: 170px;
+        height: 170px;
+    }
+
+    .java-core {
+        width: 140px;
+        height: 140px;
+    }
+
+    .java-core i {
+        font-size: 48px;
+    }
+
+    .java-core h2 {
+        font-size: 26px;
+    }
+
+    .orbit-container {
+        display: none;
+    }
+
+    /* Hide decorative floating badges that overlap the paragraph */
+    .skill {
+        display: none;
+    }
+
+    .particle {
+        pointer-events: none;
+    }
+
+    /* Avoid hover transforms causing mobile overflow */
+    .btn:hover,
+    .project-card:hover,
+    .skill-card:hover,
+    .contact-card:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .header {
+        padding: 10px 12px;
+    }
+
+    .header .container {
+        width: 100%;
+    }
+
+    .nav-links {
+        gap: 9px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-top: 145px;
+    }
+
+    .hero-container {
+        width: calc(100% - 28px);
+    }
+
+    .hero-name {
+        font-size: 34px;
+    }
+
+    .tech-orbit {
+        transform: scale(0.9);
+        transform-origin: center;
+        margin-block: -15px;
+    }
+}
+
